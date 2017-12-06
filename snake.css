@@ -1,49 +1,40 @@
-body {
-    background-color: grey;
+table {
+    border: 1px solid black;
 }
-  
-#game {
-    position: fixed;
-    width: 990px;
-    height: 600px;
+td.snakeBody {
     background-color: green;
-    display: block;
-    margin: 5px auto;
-    border: 5px solid black; 
+    border-radius: 10px;
 }
-
-canvas {
-    background-color: green;
-    display: block;
-    margin: 5px auto;
-    border: 5px solid black; 
-}
-
-.snake {
-    top:0px;
-    left:0px;
-    max-width:600px;
-    position: absolute;
-    height:30px;
-    width:30px;
-    background-color: yellow;
-}
-
-.snakeplus {
-    top:0px;
-    left:0px;
-    max-width:600px;
-    position: absolute;
-    height:60px;
-    width:60px;
-    background-color: yellow;
-}
-
-.apple {
-    position:relative;
-    top:0px;
-    left:0px;
-    height:30px;
-    width:30px;
+td.snakeHead {
     background-color: red;
+    border-radius: 10px;
+}
+td.fruit {
+    background-color: red;
+    border-radius: 10px;
+}
+td {
+    width:10px;
+    height:10px;
+}
+#score {
+    text-align: center;
+    font-size:15px;
+}
+table {
+    margin:auto;
+}
+
+#gameover {
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 50px;
+    display:none;
+    margin: auto;
+    top: 200px;
+    
 }
