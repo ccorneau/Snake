@@ -1,10 +1,10 @@
-var map = 40;
+var map = 12;
 var snakeHead = [0, 5];
 var snakeBody = [
     [0, 5], [0, 4], [0, 3], [0, 2], [0, 1]
 ];
 var direction = "droite";
-var speed = 100;
+var speed = 150;
 var score = 0;
 
 $(document).ready(function () {
@@ -41,12 +41,15 @@ function actualitySnake() {
     var newHead = [];
     if (direction == "droite") {
         newHead = [snakeHead[0], snakeHead[1] + 1];
+
     }
     else if (direction == "gauche") {
         newHead = [snakeHead[0], snakeHead[1] - 1];
+
     }
     else if (direction == "haut") {
         newHead = [snakeHead[0] - 1, snakeHead[1]];
+
     }
     else if (direction == "bas") {
         newHead = [snakeHead[0] + 1, snakeHead[1]];
@@ -60,7 +63,7 @@ function actualitySnake() {
         $('#score span').html('' + score);
     }
     //Game over si boucle sur le snake
-    else if (cell.hasClass('snakebody')) {
+    else if (cell.hasClass('snakeBody')) {
         gameOver();
     }
     else if (newHead[0] < 0 || newHead[1] < 0) {
@@ -112,8 +115,10 @@ function createApple() {
 //gameover
 function gameOver() {
     $('#gameover').show('fast', function () {
-        $(this).animate({ top: 100 }, 'slow');
+        $(this).animate({ top: -100 }, 'slow');
     })
+
     clearInterval(go);
-    die();
 }
+
+

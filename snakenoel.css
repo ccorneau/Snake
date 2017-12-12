@@ -1,0 +1,66 @@
+body {
+    background-image: url('noel/bg.jpg');
+    background-attachment: fixed;
+    
+}
+
+table {
+    border: 1px solid black;
+}
+td.snakeBody {
+    background-image: url('noel/body.png');
+    background-repeat: no-repeat;
+}
+td.snakeHead {
+    background-image: url('noel/head2.png');
+    background-repeat: no-repeat;
+}
+td.fruit {
+    background-image: url('noel/apple.png');
+    background-repeat: no-repeat;
+}
+td {
+    width:40px;
+    height:40px;
+}
+#score {
+    position: absolute;
+    top: 373px;
+    left: 112px;
+    text-align: center;
+    font-size: 29px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+table {
+    position: absolute;
+    top: 50px;
+    left: 435px;
+    z-index: 1;
+}
+
+#gameover {
+    position: relative;
+    z-index: 10;
+    width: 594px;
+    height:598px;
+    display:none;
+    top: -600px;
+    position: absolute;
+    left: 407px;
+    background-image: url('noel/gameover.png');
+    
+}
+
+.linknokia {
+    position:fixed;
+    top:-195px;
+    right:0px;
+}
+
+.linknokia:hover {
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index: 20;
+}
+

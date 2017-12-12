@@ -1,0 +1,64 @@
+body {
+    background-image: url('nokia/bgn4.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+    
+table {
+    border: 2px solid black;
+}
+td.snakeBody {
+    background-image: url('nokia/snake25.png');
+    background-repeat: no-repeat;
+}
+td.snakeHead {
+    background-image: url('nokia/snake25.png');
+    background-repeat: no-repeat;
+}
+td.fruit {
+    background-image: url('nokia/apple2.png');
+    background-repeat: no-repeat;
+}
+td {
+    background-image: url('nokia/td25.png');
+    width:25px;
+    height:25px;
+}
+#score {
+    font-family: 'VT323', monospace;
+    position: absolute;
+    top: 114px;
+    left: 483px;
+    text-align: center;
+    font-size: 30px;
+}
+table {
+    position: absolute;
+    top: 148px;
+    left: 482px;
+    z-index: 1;
+}
+
+#gameover {
+    z-index: 10;
+    display:none;
+    top: 100px;
+    font-size: 62px;
+    position: absolute;
+    left: 547px;
+    font-family: 'VT323', monospace;
+    
+}
+
+.linknoel {
+    position:fixed;
+    top:-185px;
+    right:0px;
+}
+
+.linknoel:hover {
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index: 20;
+}
